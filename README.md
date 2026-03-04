@@ -1,5 +1,5 @@
 # Neo4jAURA
-
+# CREATE USERS
 LOAD CSV WITH HEADERS 
 FROM 'https://raw.githubusercontent.com/krishnaik06/graph-dataset/refs/heads/main/users_social.csv' 
 AS row
@@ -11,6 +11,8 @@ CREATE (:User {
 });
 
 <img width="1038" height="694" alt="image" src="https://github.com/user-attachments/assets/c763f235-8506-4180-a453-5c16ad3f0374" />
+
+# CREATE USER POSTS
 
 LOAD CSV WITH HEADERS 
 FROM 'https://raw.githubusercontent.com/krishnaik06/graph-dataset/refs/heads/main/posts.csv' 
@@ -27,6 +29,7 @@ CREATE (u)-[:POSTED]->(:Post {
 <img width="663" height="511" alt="image" src="https://github.com/user-attachments/assets/6e121fbe-c292-43fd-8050-add2c7c7cc90" />
 
 
+#FRINDS OF USERS
 
 LOAD CSV WITH HEADERS 
 FROM 'https://raw.githubusercontent.com/krishnaik06/graph-dataset/refs/heads/main/relationships.csv' 
